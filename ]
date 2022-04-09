@@ -1,0 +1,135 @@
+#searchbar
+{
+	width: 100%;
+	height: 15%;
+	background-color: #05386B;
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+#dropdown
+{
+	font-family: 'Sora', sans-serif;
+	font-size: 250%;
+	color: #EDF5E1;
+	border: 4px solid black;
+	background-color: #05386B;
+	width: 35%;
+	line-height: 10%;
+	height: 10%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#searchbox
+{
+	font-family: 'Sora', sans-serif;
+	font-size: 250%;
+	color: #EDF5E1;
+	border: 4px solid black;
+	background-color: #05386B;
+	width: 65%;
+	line-height: 10%;
+	height: 10%;
+	float: right;
+	top: 0;
+	display: flex;
+	align-items: center;
+}
+
+#search
+{
+	padding-left: 5%;
+}
+
+#RecycleList
+{
+	margin-top: 120%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-family: 'Sora', sans-serif;
+	font-size: 75%;
+	color: #EDF5E1;
+	text-align: left;
+	border-bottom: 4px solid black;
+	border-left: 4px solid black;
+	border-right: 4px solid black;
+	background-color: #05386B;
+	width: 100%;
+	left: 0;
+	position: absolute;
+}
+
+li
+{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#SUmap
+{
+	position: absolute;
+	left: 55%;
+	top: 20%;
+}
+
+#LandingMap
+{
+	height: 75%;
+	width: 40%;
+	position: absolute;
+	left: 55%;
+	top: 20%;
+}
+
+#textDescription
+{
+	width: 50%;
+	margin-top: 10%;
+	margin-left: 2%;
+	float: left;
+	text-align: center;	
+	font-family: 'Open Sans', sans-serif;
+}
+
+#headerText
+{
+	font-size: 200%;
+	border-bottom: 3px solid black;
+	padding-bottom: 2%;
+}
+
+form
+{
+	float:right;
+	display: flex;
+	padding-left: 3%;
+	margin-top: 5%;
+}
+
+#searchInput
+{
+	width: 250px;
+	
+}
+
+#submitSearch
+{
+	width: 50%;
+	height: 700%;
+	margin-left: 10%;
+}
+
+body
+{
+	background-image: linear-gradient(#379683, #8EE4AF);
+}

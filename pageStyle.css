@@ -1,54 +1,105 @@
-#searchbar
+#menu
 {
 	width: 100%;
-	height: 15%;
-	background-color: #05386B;
-	position: absolute;
-	display: inline-block;
-	left: 0;
-	right: 0;
+	height: 10%;
 	top: 0;
+	left: 0;
+	position: absolute;
 }
 
-#dropdown
+#LESLogo
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.menuBox
 {
 	font-family: 'Sora', sans-serif;
-	font-size: 250%;
-	color: #EDF5E1;
-	border: 4px solid black;
-	background-color: #05386B;
-	width: 35%;
-	line-height: 100%;
+        font-size: 250%;
+        color: #EDF5E1;
+        /* border-bottom: 4px solid black; */
+        background-color: #05386B;
 	height: 100%;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	text-align: center;
+	float: left;
+	display: -webkit-flex;
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	align-items: center;
+	user-select: none;
 }
 
-#searchbox
+.menuBox:hover
 {
-	font-family: 'Sora', sans-serif;
-	font-size: 250%;
-	color: #EDF5E1;
-	border: 4px solid black;
-	background-color: #05386B;
-	width: 65%;
-	line-height: 100%;
-	height: 100%;
-	float: right;
-	top: 0;
-	display: flex;
-	align-items: center;
+	background-color: #B4C3D3;
+	color: #011120;
+}
+
+#recycle
+{
+	width: 25%;
 }
 
 #search
 {
+	width: 25%;
+}
+
+#logo
+{
+	width: 10%;
+	font-family: 'Sora', sans-serif;
+        font-size: 250%;
+        color: #EDF5E1;
+        /* border-bottom: 4px solid black; */
+	background-image: url("LESRecycling.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	transition: background-image;
+        background-color: #05386B;
+        height: 100%;
+        float: left;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;	
+}
+
+#logo:hover
+{
+	background-image: url("Home.png");
+	background-size: 30%;
+	background-color: #B4C3D3;
+}
+
+.menuImage
+{	
+	height: auto;
 	padding-left: 5%;
+}
+
+#login
+{
+	max-width: 15%;
+}
+
+#contactinfo
+{
+	max-width: 20%;
+}
+
+
+#admin
+{
+	width: 20%;
+}
+
+#contact
+{
+	width: 20%;
 }
 
 #SUmap
@@ -69,43 +120,57 @@
 
 #textDescription
 {
+	margin-left: auto;
+	margin-right: auto;
 	width: 50%;
-	margin-top: 10%;
-	margin-left: 2%;
-	float: left;
+	margin-top: 12%;
 	text-align: center;	
 	font-family: 'Open Sans', sans-serif;
 }
 
 #headerText
 {
-	font-size: 200%;
+	font-size: 300%;
 	border-bottom: 3px solid black;
 	padding-bottom: 2%;
 }
 
-form
+#searchbar
 {
-	float:right;
-	display: flex;
-	padding-left: 3%;
-	margin-top: 5%;
+	margin-top: 50%;
+	height: 10%;
+	width: 75%;
+       	margin-left: auto;
+	margin-right: auto;
+	display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
-#searchInput
+.roundedBar
 {
-	width: 250px;
-	
+	width: 80%;
+	line-height: 50%;
+	padding: 2%;
+	border-radius: 50px;
+	border: 5px #000000 solid;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 150%;
 }
 
-#submitSearch
+.sub
 {
-	width: 50%;
-	height: 700%;
-	margin-left: 10%;
+	width: 6.5%;
+	height: 100%;
+	border-radius: 50px;
+	border: 5px #000000 solid;
+	margin-left: 5%;
 }
 
 body
 {
 	background-image: linear-gradient(#379683, #8EE4AF);
 }
+
+
