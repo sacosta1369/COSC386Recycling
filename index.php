@@ -19,11 +19,11 @@
 		<link rel="manifest" href="site.webmanifest">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+				
 		<title>Recycling Database Interface</title>
 	</head>
 	<body>
-		<script src="pageScript.js"></script>
+
 		<!-- Menu bar at top of page -->
 		<div id="menu">
 			<!-- Lower Eastern Shore Recycling Logo -->
@@ -41,13 +41,44 @@
 
 			<!-- Log in tab -->
 			<div id="admin" class = "menuBox">
-				<span>Log In</span> <img src="LogIn.png" alt="A log-in logo" id="login" class="menuImage">
+				<span>Log In</span> <img src="LogIn.png" alt="A log-in logo" id="login" class="menuImage" id="logImg">
+			<script type="text/javascript">
+				document.getElementById("admin").onclick = function() {
+        				window.location.replace("login.php");
+				};
+
+				document.getElementById("logo").onclick = function() {
+        				window.location.replace("index.php");
+				};
+				
+				document.getElementById("search").onclick = function() {
+					let e = document.getElementById("searchbar");
+					e.scrollIntoView({
+						block: 'center',
+						behavior: 'smooth',
+						inline: 'center'
+					});
+				};
+	
+				$(document).ready(function() {
+					$('.menuBox').mousedown(function(e) {
+						$(this).css("color", "#000000");
+					});
+				});
+		
+				$(document).ready(function() {
+					$('.menuBox').mouseup(function(e) {
+						$(this).css("color", "#EDF5E1");
+					});
+				});
+			</script>
 			</div>
 			
 			<!-- Contact info tab -->
 			<div id="contact" class = "menuBox"><span>Contact</span>
 				<img src="ContactInfo.png" alt="A contact logo" id="contactinfo" class="menuImage"> 
 			</div>
+
 		</div>
 		
 		<!--
@@ -64,7 +95,7 @@
 
 	<form id="searchbar">
 		<input type="text" name="search" class="roundedBar">
-		<input type="submit" class="sub" value="">
+		<input type="image" class="sub" value="" src="Search.png" alt="Submit" id="submitsearch">
 	</form>
 
 	<?php

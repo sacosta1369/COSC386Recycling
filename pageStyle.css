@@ -1,3 +1,8 @@
+html
+{
+	scoll-behavior: smooth !important;
+}
+
 #menu
 {
 	width: 100%;
@@ -32,8 +37,7 @@
 
 .menuBox:hover
 {
-	background-color: #B4C3D3;
-	color: #011120;
+	background-color: #1E4C7A;
 }
 
 #recycle
@@ -72,7 +76,7 @@
 {
 	background-image: url("Home.png");
 	background-size: 30%;
-	background-color: #B4C3D3;
+	background-color: #1E4C7A;
 }
 
 .menuImage
@@ -146,6 +150,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+	margin-bottom: 100%;
 }
 
 .roundedBar
@@ -157,6 +162,7 @@
 	border: 5px #000000 solid;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 150%;
+	text-align: center;
 }
 
 .sub
@@ -166,6 +172,12 @@
 	border-radius: 50px;
 	border: 5px #000000 solid;
 	margin-left: 5%;
+	background-color: #FFFFFF!important;
+}
+
+#submitsearch
+{
+	background-color: #FFFFFF;
 }
 
 body
@@ -173,4 +185,6 @@ body
 	background-image: linear-gradient(#379683, #8EE4AF);
 }
 
-
+body::-webkit-scrollbar {
+  display: none;
+}
