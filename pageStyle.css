@@ -172,19 +172,98 @@ html
 	border-radius: 50px;
 	border: 5px #000000 solid;
 	margin-left: 5%;
-	background-color: #FFFFFF!important;
+	background-color: #FFFFFF;
 }
 
 #submitsearch
 {
-	background-color: #FFFFFF;
+	background-image: url("Search.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sub:hover
+{
+	background-color: #1E4C7A;
 }
 
 body
 {
-	background-image: linear-gradient(#379683, #8EE4AF);
+	background-image: linear-gradient(#379683, #8EE4AF); 
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+#logindiv
+{
+	margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+	height: 50%;
+	border: 5px black solid;
+        margin-top: 2%;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+	border-radius: 50px;
+	background-color: #376089;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+#logheader
+{
+	
+	margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        margin-top: 9%;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+	font-size: 400%;
+        border-bottom: 3px solid black;
+        padding-bottom: 1%;
+}
+
+.logfield
+{
+	margin: 3%;
+	width: 100%;
+        line-height: 50%;
+        padding: 2%;
+        border-radius: 50px;
+        border: 3px #000000 solid;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 125%;
+        text-align: left;
+	padding-left: 6.5%;
+}
+
+#logsub
+{
+	background-color: #FFFFFF;
+	margin: 2%;
+        width: 35%;
+        line-height: 85%;
+        padding: 2%;
+        border-radius: 50px;
+        border: 3px #000000 solid;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 100%;
+        text-align: center;
+}
+
+#logsub:hover
+{
+	background-color: #808080;
+}
+
+#TESTVALUE
+{
+	margin-top: 100%;
+	font-size: 30%;
 }

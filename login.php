@@ -1,3 +1,15 @@
+<?php
+	session_start();
+
+	include "database.php";
+	include "retrieve.php";
+	include "log_function.php";
+	include "logic.php";
+	
+	echo $_SESSION['username'];
+
+?>
+
 <DOCTYPE html>
 <html lang="en">
         <head>
@@ -23,25 +35,22 @@
                 <title>Recycling Database Interface</title>
         </head>
         <body>
-
-                <!-- Menu bar at top of page -->
+		<!--
+                
                 <div id="menu">
-                        <!-- Lower Eastern Shore Recycling Logo -->
+                        
                         <div id="logo" class="LogoClass">
 
                         </div>
 
-                        <!-- Recycling dropdown menu -->
+                        
                         <div id="recycle" class="menuBox"><span>Recycle &#9660;</span>
                         </div>
 
-                        <!-- Search tab -->
+                        
                         <div id="search" class = "menuBox"><span>Search</span>
-                        </div>
-
-                        <!-- Log in tab -->
-                        <div id="admin" class = "menuBox">
-                                <span>Log In</span> <img src="LogIn.png" alt="A log-in logo" id="login" class="menuImage">
+                        
+ 
                         <script type="text/javascript">
                                 document.getElementById("admin").onclick = function() {
                                         window.location.replace("login.php");
@@ -63,14 +72,79 @@
                                         });
                                 });
                         </script>
+			</div>			
+
+                        
+                        <div id="contact" class = "menuBox"><span>Contact</span>
+                                <img src="ContactInfo.png" alt="A contact logo" id="contactinfo" class="menuImage">
+			</div>
+
+			 
+                        <div id="admin" class = "menuBox">
+		 		<span>Log In</span> <img src="LogIn.png" alt="A log-in logo" id="login" class="menuImage">
+			</div>
+				
+		</div>
+		-->
+                <div id="menu">
+                               <div id="logo" class="LogoClass">
+
                         </div>
 
-                        <!-- Contact info tab -->
+                        <div id="recycle" class="menuBox"><span>Recycle &#9660;</span>
+                        </div>
+
+                        <div id="search" class = "menuBox"><span>Search</span>
+                        </div>
+
+                        <div id="admin" class = "menuBox">
+                                <span>Log In</span> <img src="LogIn.png" alt="A log-in logo" id="login" class="menuImage" id="logImg">
+                        <script type="text/javascript">
+                                document.getElementById("admin").onclick = function() {
+                                        window.location.replace("login.php");
+                                };
+
+                                document.getElementById("logo").onclick = function() {
+                                        window.location.replace("index.php");
+				};
+
+				document.getElementById("search").onclick = function() {
+					window.location.replace("index.php");
+                                        let e = document.getElementById("searchbar");
+                                        e.scrollIntoView({
+                                                block: 'center',
+                                                behavior: 'smooth',
+                                                inline: 'center'
+					});
+                                };
+
+                                $(document).ready(function() {
+                                        $('.menuBox').mousedown(function(e) {
+                                                $(this).css("color", "#000000");
+                                        });
+                                });
+
+                                $(document).ready(function() {
+                                        $('.menuBox').mouseup(function(e) {
+                                                $(this).css("color", "#EDF5E1");
+                                        });
+                                });
+                        </script>
+                        </div>
+
                         <div id="contact" class = "menuBox"><span>Contact</span>
                                 <img src="ContactInfo.png" alt="A contact logo" id="contactinfo" class="menuImage">
                         </div>
 
                 </div>
+		<h1 id="logheader"> Log In </h1>
+		<div id="logindiv">
+			<form id="loginform" method="POST" autocomplete="off">
+				<input type="text" placeholder="Username: " name="username" id="user" class="logfield" autocomplete="off" required><br>
+				<input type="password" placeholder="Password: " name="password" id="pass" class="logfield" autocomplete="off" required><br>
+				<button type="submit" name="login" id="logsub">Log In</button>
+			</form>
+		</div>
 	</body>
 </html>
 

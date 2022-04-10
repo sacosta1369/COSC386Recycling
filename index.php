@@ -95,7 +95,7 @@
 
 	<form id="searchbar">
 		<input type="text" name="search" class="roundedBar">
-		<input type="image" class="sub" value="" src="Search.png" alt="Submit" id="submitsearch">
+		<input type="submit" class="sub" value="" id="submitsearch">
 	</form>
 
 	<?php
@@ -103,8 +103,6 @@
                 {
                         print '<p id="confirm">Successfully connected to MySQL. </p>';
                 }
-
-                mysqli_close($connection);
 		
 		$searchVal = $_POST['search'];
 
